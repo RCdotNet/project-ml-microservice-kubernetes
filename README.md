@@ -44,3 +44,19 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Deploy microservice via `./run_kubernetes.sh`
 * When the container deployed and you see the port 8088 forwarded to container's pot 80 run `./make_prediction.sh` to make a prediction.
+
+### Files explantion
+
+* .circleci directory contains CircleCi configuration
+* model_data directory contains data for the pre trained ML
+* output_txt_files contains the files required by the rubric
+* app.py --> the python application
+* Dockerfile --> the file for building docker image
+* make_prediction.sh --> As the name suugests, make a prediction eighter using container or kubernetes
+* Makfile --> set up environment, linting etc.
+* README.md --> this file you read right now
+* dependencies.txt --> contains dependencies for this project
+* run_docker.sh --> generate and run this project in a docker container
+* run_kubernetes.sh --> install the project from docker hub and run in kubernetes cluster
+* upload_docker.sh --> upload the validated container to github for further using in kubernetes
+   
